@@ -29,15 +29,16 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
   * No precipitation in the past 24-hour
   * Data will be captured from June to August  
 * Geospatial Analysis
-  * 
-  * Zonal Statistics  
+  * Raster Analysis - Zonal Statistics/Clip/Reprojec
+  * Vector Analysis - Intersect  
 * Statistical Analysis
   * Path Analysis (Mediation Effect Analysis)  
 
-## Tool/packages I will use
+## Potential Tool/packages
 * Zonal stat: rasterstats [^4]
-*
-*
+* Raster clip:
+* Raster reproject
+* Intersect: 
 
 ## Expected Outcomes
 * Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.
