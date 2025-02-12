@@ -18,8 +18,8 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * Spatial Unit: HOLC-graded neighborhoods
 
 ## Datasets & URL
-**NLCD[^1] (National LandCover Database)**: 
-**Mapping Inequality[^2]**: It will be used for Red Lining Boundaries. 
+**NLCD[^2] (National LandCover Database)**: 
+**Mapping Inequality[^3]**: It will be used for Red Lining Boundaries. 
 
 ## Tool/packages I will use
 *
@@ -34,7 +34,9 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
 * The mediating effect of urban forests on land surface temperatures is stronger in cities with lower population density, whereas the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
 
-[^2]: https://dsl.richmond.edu/panorama/redlining/data
+[^1]: 
+[^2]: https://www.mrlc.gov/
+[^3]: https://dsl.richmond.edu/panorama/redlining/data
 
 ## References
 * Aaronson, D., Hartley, D., & Mazumder, B. (2021). The Effects of the 1930s HOLC "Redlining" Maps. *American Economic Journal: Economic Policy*, 13(4), 355-392.
