@@ -12,12 +12,16 @@ Numerous studies have examined the relationship between redlining policies, heat
 ## Problem Statement, Questions, and Objectives
 Neighborhoods redlined in the 1930s and 1940s have experienced significantly higher heat exposure risks up to the present than neighborhoods not redlined. Several studies have explored the association between HOLC grades and the proportion of natural and built environments (i.e., tree canopy coverage and impervious surfaces). However, existing studies have not thoroughly examined the mechanisms by which past redlining policies influence and mediate current heat exposure. The primary purpose of this study is to examine how the legacy of redlining affects neighborhood land surface temperature using mediation analysis. Specifically, the study aims to answer the following research questions: 1) What is the relationship between the spatial patterns of urban forests (or tree canopies), impervious surfaces, and HOLC grades? Does this relationship remain consistent over time? 2) How do HOLC grades impact neighborhood land surface temperatures? How are land surface temperatures in neighborhoods with different HOLC grades affected by the spatial distribution of urban forests (or tree canopies) and impervious surfaces? 3) Do the mediating effects of environmental factors vary between different cities? 
 
+## Study Area
+* Criteria: 1) A Metropolitan city with Heat exposure, 2) Population Density, and 3) Different climate conditions
+* Portland, New York City – Although New York City and Portland are metropolitan cities facing heat exposure issues, New York City's higher population density results in more impervious surfaces. Additionally, they experience different climatic conditions.
+* However, given time limits of the quarter, study area might be restricted to only one area.
+
 ## Datasets
 ** **:
-
+** **: 
 
 ## Tool/packages I will use
-
 
 
 ## Planned Methodology/Approach
