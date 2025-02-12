@@ -30,7 +30,9 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 ## Planned Methodology/Approach
 * Data Collection for Land Surface Temperature data
   * Less than 10% cloud cover above the city
-**  
+  * No scan line errors present
+  * No precipitation in the past 24-hour
+  * Data will be captured from June to August  
 * Geospatial Analysis
 ** 
 * Statistical Analysis
@@ -46,6 +48,6 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * Nowak, D. J., Ellis, A., & Greenfield, E. J. (2022). The disparity in tree cover and ecosystem service values among redlining classes in the United States. *Landscape and Urban Planning*, 221, 104370.
 * Winling, L. C., & Michney, T. M. (2021). The roots of redlining: Academic, governmental, and professional networks in the making of the new deal lending regime. *Journal of American History*, 108(1), 42-69.
 
-[^1]: 
+[^1]: https://earthexplorer.usgs.gov/
 [^2]: https://www.mrlc.gov/
 [^3]: https://dsl.richmond.edu/panorama/redlining/data
