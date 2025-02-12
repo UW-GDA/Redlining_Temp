@@ -29,7 +29,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 
 ## Planned Methodology/Approach
 * Data Collection for Land Surface Temperature data
-** Less than 10% cloud cover above the city
+  * Less than 10% cloud cover above the city
 **  
 * Geospatial Analysis
 ** 
