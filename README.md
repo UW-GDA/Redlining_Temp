@@ -15,17 +15,12 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 ## Study Area & Analysis Unit
 * Criteria: 1) A Metropolitan city with Heat exposure, 2) Population Density, and 3) Different climate conditions
 * Portland, New York City – Although New York City and Portland are metropolitan cities facing heat exposure issues, New York City's higher population density results in more impervious surfaces. Additionally, they experience different climatic conditions (Given the time constraints of the quarter, the study area may need to be limited to a single location).
-* Spatial Unit: HOLC-graded neighborhoods
+* Spatial Unit: HOLC-graded neighborhoods of the study area
 
 ## Datasets & URL
 * **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I will calculate HOLC-graded neighborhoods' average land surface temperature based on the data source. 
 * **NLCD[^2] (National LandCover Database)**: The proportion of urban forests and impervious surfaces will be measured based on the dataset. 
 * **Mapping Inequality[^3]**: It will be used for HOLC-graded neighborhood boundaries. 
-
-## Tool/packages I will use
-*
-*
-*
 
 ## Planned Methodology/Approach
 * Data Collection for Land Surface Temperature data
@@ -34,14 +29,19 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
   * No precipitation in the past 24-hour
   * Data will be captured from June to August  
 * Geospatial Analysis
-** 
+  * Zonal Statistics  
 * Statistical Analysis
-** 
+  * Path Analysis (Mediation Effect Analysis)  
+
+## Tool/packages I will use
+* Zonal stat: rasterstats
+*
+*
 
 ## Expected Outcomes
 * Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.
 * Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
-* The mediating effect of urban forests on land surface temperatures is stronger in cities with lower population density, whereas the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
+* The mediating effect of urban forests on land surface temperatures is more substantial in cities with lower population density. In contrast, the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
 
 ## References
 * Aaronson, D., Hartley, D., & Mazumder, B. (2021). The Effects of the 1930s HOLC "Redlining" Maps. *American Economic Journal: Economic Policy*, 13(4), 355-392.
