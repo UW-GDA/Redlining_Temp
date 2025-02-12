@@ -15,22 +15,24 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 ## Study Area
 * Criteria: 1) A Metropolitan city with Heat exposure, 2) Population Density, and 3) Different climate conditions
 * Portland, New York City – Although New York City and Portland are metropolitan cities facing heat exposure issues, New York City's higher population density results in more impervious surfaces. Additionally, they experience different climatic conditions.
-* However, given time limits of the quarter, study area might be restricted to only one area.
+* Given the time constraints of the quarter, the study area may need to be limited to a single location.
 
 ## Datasets
 ** **:
 ** **: 
 
 ## Tool/packages I will use
-
+*
+*
+*
 
 ## Planned Methodology/Approach
-
-
+* 
 
 ## Expected Outcomes
-
-
+* Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.
+* Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
+* The mediating effect of urban forests on land surface temperatures is stronger in cities with lower population density, whereas the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
 
 ## References
 Aaronson, D., Hartley, D., & Mazumder, B. (2021). The Effects of the 1930s HOLC "Redlining" Maps. *American Economic Journal: Economic Policy*, 13(4), 355-392. 
