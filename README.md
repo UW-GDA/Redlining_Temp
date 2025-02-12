@@ -1,9 +1,9 @@
 # Redlining_Temp
 ## Project Team
-* Hoseok Sa
+* Hoseok Sa 
 
 ## Project Overview
-Numerous studies have examined the relationship between redlining policies, heat, and natural environments (e.g., tree canopy and green spaces). however, effective policies to mitigate heat vulnerability in historically redlined neighborhoods remain limited. To address this gap, this project investigates how the legacy of redlining influences neighborhood land surface temperatures through natural and built environments using mediation analysis. Specifically, it employs geospatial analysis to assess land surface temperatures, natural environments, and built environments and utilizes statistical methods to explore their interrelationships.
+Numerous studies have examined the relationship between redlining policies, heat, and natural environments (or built environments). However, differential pathways contributing to heat vulnerability in historically redlined neighborhoods within the local context remain underexplored. To address this gap, this project investigates how the legacy of redlining influences neighborhood land surface temperatures through natural and built environments using mediation analysis. Specifically, it employs geospatial analysis to assess land surface temperatures, natural environments, and built environments and utilizes statistical methods to explore their interrelationships.
 
 ## Background
 The Home Owners' Loan Corporation (HOLC) created maps to classify neighborhoods into four grades - "Grade A" being considered the best (green), "Grade B" still desirable (blue), "Grade C" declining (yellow), and "Grade D" considered red. Historical redlining defined the riskiness of investing in urban neighborhoods based on demographics, infrastructure, housing quality, neighborhood stability, and proximity to amenities or hazards. The assessment of urban neighborhoods conducted by HOLC was also racially and ethnically discriminatory (Winling & Minchney, 2021). Thus, **Redlining** has been regarded as a racially discriminant government policy that denied people access to credit and housing based on their race. However, a more significant issue regarding redlining grades is that redlined neighborhoods are more vulnerable to heat, disaster, and health risks. Considering that extreme heat gets more serious due to climate change, 
