@@ -18,9 +18,9 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * Spatial Unit: HOLC-graded neighborhoods
 
 ## Datasets & URL
-**Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: 
-**NLCD[^2] (National LandCover Database)**: 
-**Mapping Inequality[^3]**: It will be used for Red Lining Boundaries. 
+* **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I will calculate HOLC-graded neighborhoods' average land surface temperature based on the data source. 
+* **NLCD[^2] (National LandCover Database)**: The proportion of urban forests and impervious surfaces will be measured based on the dataset. 
+* **Mapping Inequality[^3]**: It will be used for HOLC-graded neighborhood boundaries. 
 
 ## Tool/packages I will use
 *
