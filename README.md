@@ -20,7 +20,8 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 ## Datasets & URL
 * **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I will calculate HOLC-graded neighborhoods' average land surface temperature based on the data source. 
 * **NLCD[^2] (National LandCover Database)**: The proportion of urban forests and impervious surfaces will be measured based on the dataset. 
-* **Mapping Inequality[^3]**: It will be used for HOLC-graded neighborhood boundaries. 
+* **Mapping Inequality[^3]**: It will be used for HOLC-graded neighborhood boundaries.
+* **ACS Socio-Demographics Data[^4]**: The socio-demographic data will be derived from the NHGIS website. 
 
 ## Planned Methodology/Approach
 * Data Collection for Land Surface Temperature data
@@ -29,16 +30,17 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
   * No precipitation in the past 24-hour
   * Data will be captured from June to August  
 * Geospatial Analysis
-  * Raster Analysis - Zonal Statistics/Clip/Reprojec
+  * Raster Analysis - Zonal Statistics/Merging Tiles/Clip/Reproject
   * Vector Analysis - Intersect  
 * Statistical Analysis
   * Path Analysis (Mediation Effect Analysis)  
 
 ## Potential Tool/packages
-* Zonal stat: rasterstats [^4]
-* Raster clip:
-* Raster reproject
-* Intersect: 
+* Zonal stat: rasterstats [^5]
+* Merging tiles: rasterio [^6] or rioxarray [^7]
+* Raster clip: rasterio or rioxarray
+* Raster reproject: rasterio or rioxarray
+* Intersect: geopandas [^8]
 
 ## Expected Outcomes
 * Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.
@@ -53,4 +55,8 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 [^1]: https://earthexplorer.usgs.gov/
 [^2]: https://www.mrlc.gov/
 [^3]: https://dsl.richmond.edu/panorama/redlining/data
-[^4]: https://pythonhosted.org/rasterstats/
+[^4]: https://www.nhgis.org/
+[^5]: https://pythonhosted.org/rasterstats/
+[^6]: https://rasterio.readthedocs.io/en/stable/
+[^7]: https://corteva.github.io/rioxarray/stable/
+[^8]: https://geopandas.org/en/stable/
