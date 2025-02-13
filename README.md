@@ -1,5 +1,8 @@
 # Redlining_Temp
 
+## Project Title
+Unveiling the Legacy of Redlining: Pathways Linking HOLC Grades, Natural and Built Environments, and Land Surface Temperature
+
 ## Project Team
 * Hoseok Sa 
 
