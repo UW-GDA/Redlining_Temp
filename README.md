@@ -28,7 +28,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured based on the dataset. 
 * **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
 * **American Community Survey Data[^4]**: Total population and housing units were derived from the NHGIS website.
-* **Microsoft Building Footprints Data[5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods. 
+* **Microsoft Building Footprints Data[^5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods. 
 
 ## Methodology/Approach
 * Data Collection for Land Surface Temperature data
