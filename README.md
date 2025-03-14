@@ -28,7 +28,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured based on the dataset. 
 * **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
 * **American Community Survey Data[^4]**: Total population and housing units were derived from the NHGIS website.
-* **Microsoft Building Footprints Data[^5]**: The building area and density around HOLC-graded neighborhoods were calculated based on this data source. 
+* **Microsoft Building Footprints Data[5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods. 
 
 ## Methodology/Approach
 * Data Collection for Land Surface Temperature data
@@ -43,10 +43,10 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
   * Path Analysis (Mediation Effect Analysis)  
 
 ## Potential Tool/packages
-* Zonal stat: rasterstats [^6]
-* Merging tiles: rasterio [^7] or rioxarray [^8]
-* Raster clip: rasterio or rioxarray
-* Raster reproject: rasterio or rioxarray
+* Loading data: rioxarray [^6]
+* Zonal stat: rasterstats [^7]
+* Raster clip: rasterio [^8]
+* Raster reproject: rasterio 
 * Intersect: geopandas [^9]
 
 ## Conceptual Framework
@@ -90,7 +90,7 @@ The second conceptual framework represents the conceptual model for **impervious
 [^3]: https://dsl.richmond.edu/panorama/redlining/data
 [^4]: https://www.nhgis.org/
 [^5]: https://github.com/microsoft/USBuildingFootprints
-[^6]: https://pythonhosted.org/rasterstats/
-[^7]: https://rasterio.readthedocs.io/en/stable/
-[^8]: https://corteva.github.io/rioxarray/stable/
+[^6]: https://corteva.github.io/rioxarray/stable/
+[^7]: https://pythonhosted.org/rasterstats/
+[^8]: https://rasterio.readthedocs.io/en/stable/
 [^9]: https://geopandas.org/en/stable/
