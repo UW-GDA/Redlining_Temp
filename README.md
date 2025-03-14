@@ -1,9 +1,10 @@
 # Redlining_Temp
 
 ## Project Title
+
 Unveiling the Legacy of Redlining: Pathways Linking HOLC Grades, Natural and Built Environments, and Land Surface Temperature
 
-## Project Team
+## Project Member
 * Hoseok Sa 
 
 ## Project Overview
@@ -27,22 +28,33 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I calculated HOLC-graded neighborhoods' land surface temperature for 2021, 2017, and 2013, based on the data source. 
 * **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured based on the dataset. 
 * **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
-* **American Community Survey Data[^4]**: Total population and housing units were derived from the NHGIS website.
+* **American Community Survey Data[^4]**: Total population, housing units, the proportion of several races were derived from the NHGIS website. However, they were not used for geospatial analysis. 
 * **Microsoft Building Footprints Data[^5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods. 
 
 ## Methodology/Approach
-* Data Collection for Land Surface Temperature data
+**1. Data Collection for Land Surface Temperature data**
   * Less than 10% cloud cover above the city
   * No scan line errors present
   * No precipitation in the past 24-hour
-  * Data will be captured from June to August for 2021, 2017, and 2013   
-* Geospatial Analysis
-  * Raster Analysis - Zonal Statistics/Merging Tiles/Clip/Reproject
-  * Vector Analysis - Intersect  
-* Statistical Analysis
+  * Data will be captured from June to August for 2021 and 2013
+    
+**2. Data Collection for Tree Canopy Cover, Impervious Surfaces, Building Footprints**
+  * Tree canopy cover and impervious surface datasets from 2021 and 2013 were processed.
+  * However, due to data limitations, only the 2021 dataset was available for building footprints.
+
+**3. Descriptive Statistics**
+  * The descriptive statistics for the ACS datasets were calculated based on the area intersected with HOLC-graded neighborhoods.
+  * Box plots were used to examine whether the median values of land surface temperature, tree canopy cover, and impervious surfaces differ across HOLC grades, alongside Kruskal–Wallis H test results.
+
+**4. Geospatial Analysis**
+  * Raster Analysis - Reproject/Clip/Zonal Stats
+  * Vector Analysis - Intersect/Calculating Area
+    
+**5. Statistical Analysis**
+  * Before running regression models, four HOLC-grades are classified into three categories (High: HOLC grade A, Intermediate: HOLC grade B, and Low: HOLC grades C and D) as grades C and D have similar patterns.  
   * Path Analysis (Mediation Effect Analysis)  
 
-## Potential Tool/packages
+## Tool/packages
 * Loading data: rioxarray [^6]
 * Zonal stat: rasterstats [^7]
 * Raster clip: rasterio [^8]
@@ -52,24 +64,30 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 ## Conceptual Framework
 This study presents path analysis results based on the following conceptual frameworks. Since tree canopy cover and impervious surfaces are highly correlated, two separate models were developed to address multicollinearity concerns. The first framework focuses on **tree canopy cover**, incorporating two regression models: one estimating tree canopy cover proportion of HOLC-graded neighborhoods and the other estimating land surface temperature of HOLC-graded neighborhoods. Based on these regression results, this study assesses the mediating effect of tree canopy cover on the relationship between redlining grades and land surface temperature.
 
-<p align="center">
-  <img src="results/Framework1.png" alt="Conceptual Framework for Tree Canopy Cover" width="600">
+<p align="left">
+  <img src="results/Framework1.png" alt="Conceptual Framework for Tree Canopy Cover" width="800">
 </p>
 
 The second conceptual framework represents the conceptual model for **impervious surfaces**. This framework also incorporates two models: one estimating impervious surface proportion of HOLC-graded neighborhoods and the other estimating land surface temperature of HOLC-graded neighborhoods. Using these results, this research evaluates the mediating effect of impervious surfaces on the relationship between redlining grades and land surface temperature.
  
-<p align="center">
-  <img src="results/Framework2.png" alt="Conceptual Framework for Impervious Surfaces" width="600">
+<p align="left">
+  <img src="results/Framework2.png" alt="Conceptual Framework for Impervious Surfaces" width="800">
 </p>
 
 ## Analysis Results
 
-### Descriptive Results
-* Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.
+### 1) Geospatial Analysis & Descriptive Results
+**1-1. Neighborhoods of Grades C and D (Lower grades) are likely to have higher land surface temperatures, compared to Grades A (High grade) and B (Intermediate grade). The similar pattern is maintained over time (2013 through 2021). This pattern can be captured more prominently.** 
+
+<p align="left">
+  <img src="results/portland_holc_temp2021.png" alt="Comparison for LST between 2013 and 2021" width="800">
+</p>
+
+**1-2. Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.**
 * Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
 * The mediating effect of urban forests on land surface temperatures is more substantial in cities with lower population density. In contrast, the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
 
-### Regression Results
+### 2) Regression Results
 
 
 
@@ -77,7 +95,7 @@ The second conceptual framework represents the conceptual model for **impervious
 * 
 
 ## Conclusion
-* 
+* This study showed that 
 
 
 ## References
