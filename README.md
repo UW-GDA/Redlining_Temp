@@ -25,11 +25,11 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 </p>
 
 ## Datasets & URL
-* **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I calculated HOLC-graded neighborhoods' land surface temperature for 2021, 2017, and 2013, based on the data source. 
-* **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured based on the dataset. 
+* **Landsat 8 OLI/TIRS Collection 2 atmospherically corrected surface reflectance**[1]: Using the Google Earth engine, I applied the approach described below to extract the average land surface temperature for 2021 and 2013. Based on the data source, I calculated the land surface temperature of HOLC-graded neighborhoods for 2021 and 2013. 
+* **NLCD[2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured using the NLCD datasets for 2021 and 2013. 
 * **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
 * **American Community Survey Data[^4]**: Total population, housing units, the proportion of several races were derived from the NHGIS website. However, they were not used for geospatial analysis. 
-* **Microsoft Building Footprints Data[^5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods. 
+* **Microsoft Building Footprints Data[^5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods for 2021. 
 
 ## Methodology/Approach
 **1. Data Collection for Land Surface Temperature data**
