@@ -113,15 +113,11 @@ The second conceptual framework represents the conceptual model for **impervious
   <img src="results/portland_holc_buildingdensity.png" alt="Comparison for Building Density for 2021" width="800">
 </p>
 
-
-* Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
-
 ### 2) Regression Results
 * The mediating effect of urban forests on land surface temperatures is more substantial in cities with lower population density. In contrast, the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
 
-
 ## Discussion
-* 
+* Neighborhoods with higher HOLC grades have less heat vulnerability, whereas those with lower grades are more susceptible to heat. Additionally, neighborhoods with higher proportion of tree canopy cover and less proportion of impervious surfaces tend to have lower land surface temperatures.
 
 ## Conclusion
 * This study showed that 
