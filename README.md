@@ -107,7 +107,11 @@ The second conceptual framework represents the conceptual model for **impervious
   <img src="results/boxplot_HOLC_imperv.png" alt="Comparison for Impervious Surfaces between HOLC grades" width="800">
 </p>
 
-**1-4.**
+**1-4. Generally, neighborhoods with lower HOLC grades (C and D) are more likely to have higher levels of building density, whereas those with higher grades (A and B) show lower levels of building density.**
+
+<p align="left">
+  <img src="results/portland_holc_buildingdensity.png" alt="Comparison for Building Density for 2021" width="800">
+</p>
 
 
 * Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
