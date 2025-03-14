@@ -16,7 +16,7 @@ Numerous studies have examined the relationship between redlining policies, heat
 Neighborhoods redlined in the 1930s and 1940s have experienced significantly higher heat exposure risks up to the present than neighborhoods not redlined. Several studies have explored the association between HOLC grades and the proportion of natural and built environments (i.e., tree canopy cover and impervious surfaces). However, existing studies have not thoroughly examined the mechanisms by which past redlining policies influence and mediate current heat exposure. The primary purpose of this study is to examine how the legacy of redlining affects neighborhood land surface temperature using path (mediation) analysis. Specifically, the study aims to answer the following research questions: **1) What is the relationship between the spatial patterns of tree canopies, impervious surfaces, and HOLC grades? Does this relationship remain consistent over time? 2) How are land surface temperatures in neighborhoods with different HOLC grades affected by the spatial distribution of tree canopies and impervious surfaces? 3) Are the mediating effects of the environmental factors on land surface temperature bigger than direct effect of HOLC grades on the land surface temperature?** 
 
 ## Study Area & Analysis Unit
-* I selected Portland as the study area for this research, especially focusing on HOLC boundaries in Portland. Several studies have explored 
+* Study Area: Portland, especially focusing on HOLC boundaries in Portland. 
 * Spatial Unit: HOLC-graded neighborhoods of the study area
 
 <p align="center">
@@ -24,10 +24,11 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 </p>
 
 ## Datasets & URL
-* **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I will calculate HOLC-graded neighborhoods' land surface temperature for 2021, 2017, and 2013, based on the data source. 
-* **NLCD[^2] (National LandCover Database)**: The proportion of urban forests and impervious surfaces will be measured based on the dataset. 
-* **Mapping Inequality[^3]**: It will be used for HOLC-graded neighborhood boundaries.
-* **ACS Socio-Demographics Data[^4]**: The socio-demographic data will be derived from the NHGIS website. 
+* **Landsat Collection 2 U.S. Analysis Ready Data (ARD) Level-2 Surface Temperature Science Project**[^1]: I calculated HOLC-graded neighborhoods' land surface temperature for 2021, 2017, and 2013, based on the data source. 
+* **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured based on the dataset. 
+* **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
+* **American Community Survey Data[^4]**: Total population and housing units were derived from the NHGIS website.
+* **Microsoft Building Footprints Data[^5]**: The building area and density around HOLC-graded neighborhoods were calculated based on this data source. 
 
 ## Methodology/Approach
 * Data Collection for Land Surface Temperature data
@@ -42,11 +43,11 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
   * Path Analysis (Mediation Effect Analysis)  
 
 ## Potential Tool/packages
-* Zonal stat: rasterstats [^5]
-* Merging tiles: rasterio [^6] or rioxarray [^7]
+* Zonal stat: rasterstats [^6]
+* Merging tiles: rasterio [^7] or rioxarray [^8]
 * Raster clip: rasterio or rioxarray
 * Raster reproject: rasterio or rioxarray
-* Intersect: geopandas [^8]
+* Intersect: geopandas [^9]
 
 ## Conceptual Framework
 This study presents path analysis results based on the following conceptual frameworks. Since tree canopy cover and impervious surfaces are highly correlated, two separate models were developed to address multicollinearity concerns. The first framework focuses on **tree canopy cover**, incorporating two regression models: one estimating tree canopy cover proportion of HOLC-graded neighborhoods and the other estimating land surface temperature of HOLC-graded neighborhoods. Based on these regression results, this study assesses the mediating effect of tree canopy cover on the relationship between redlining grades and land surface temperature.
@@ -88,7 +89,8 @@ The second conceptual framework represents the conceptual model for **impervious
 [^2]: https://www.mrlc.gov/
 [^3]: https://dsl.richmond.edu/panorama/redlining/data
 [^4]: https://www.nhgis.org/
-[^5]: https://pythonhosted.org/rasterstats/
-[^6]: https://rasterio.readthedocs.io/en/stable/
-[^7]: https://corteva.github.io/rioxarray/stable/
-[^8]: https://geopandas.org/en/stable/
+[^5]: https://github.com/microsoft/USBuildingFootprints
+[^6]: https://pythonhosted.org/rasterstats/
+[^7]: https://rasterio.readthedocs.io/en/stable/
+[^8]: https://corteva.github.io/rioxarray/stable/
+[^9]: https://geopandas.org/en/stable/
