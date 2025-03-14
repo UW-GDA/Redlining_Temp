@@ -77,10 +77,14 @@ The second conceptual framework represents the conceptual model for **impervious
 ## Analysis Results
 
 ### 1) Geospatial Analysis & Descriptive Results
-**1-1. Neighborhoods of Grades C and D (Lower grades) are likely to have higher land surface temperatures, compared to Grades A (High grade) and B (Intermediate grade). The similar pattern is maintained over time (2013 through 2021). This pattern can be captured more prominently.** 
+**1-1. In general, neighborhoods with lower HOLC grades (C and D) tend to have higher land surface temperatures, while those with higher grades (A and B) typically experience lower land surface temperatures. This pattern is observed in both 2013 and 2021. The box plots concerning the land surface temperature indicate that the median temperature for HOLC grade A (year 2013: 30.5, year 2021: 30.7) is the lowest, whereas the land surface temperature for grade D (year 2013: 39.4, year 2021: 39.3) is the highest. Kruskal-Wallis tests indicate that the median land surface temperatures significantly differ among the four HOLC grades in both 2013 and 2021 (2013: χ² = 31.009, df = 3, p < 0.001; 2021: χ² = 26.933, df = 3, p < 0.001).** 
 
 <p align="left">
   <img src="results/portland_holc_temp2021.png" alt="Comparison for LST between 2013 and 2021" width="800">
+</p>
+
+<p align="left">
+  <img src="results/boxplot_HOLC_lst.png" alt="Comparison for LST between HOLC grades" width="800">
 </p>
 
 **1-2. Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.**
