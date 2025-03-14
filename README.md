@@ -77,7 +77,7 @@ The second conceptual framework represents the conceptual model for **impervious
 ## Analysis Results
 
 ### 1) Geospatial Analysis & Descriptive Results
-**1-1. In general, neighborhoods with lower HOLC grades (C and D) tend to have higher land surface temperatures, while those with higher grades (A and B) typically experience lower land surface temperatures. This pattern is observed in both 2013 and 2021. The box plots concerning the land surface temperature indicate that the median temperature for HOLC grade A (year 2013: 30.5, year 2021: 30.7) is the lowest, whereas the land surface temperature for grade D (year 2013: 39.4, year 2021: 39.3) is the highest. Kruskal-Wallis tests indicate that the median land surface temperatures significantly differ among the four HOLC grades in both 2013 and 2021 (2013: χ² = 31.009, df = 3, p < 0.001; 2021: χ² = 26.933, df = 3, p < 0.001).** 
+**1-1. In general, neighborhoods with lower HOLC grades (C and D) tend to have higher land surface temperatures, while those with higher grades (A and B) typically experience lower land surface temperatures. This pattern is observed in both 2013 and 2021. The box plots concerning the land surface temperature indicate that the median temperature for HOLC grade A (year 2013: 30.5°C, year 2021: 30.7°C) is the lowest, whereas the land surface temperature for grade D (year 2013: 39.4°C, year 2021: 39.3°C) is the highest. Kruskal-Wallis tests indicate that the median land surface temperatures significantly differ among the four HOLC grades in both 2013 and 2021 (2013: χ² = 31.009, df = 3, p < 0.001; 2021: χ² = 26.933, df = 3, p < 0.001).** 
 
 <p align="left">
   <img src="results/portland_holc_temp2021.png" alt="Comparison for LST between 2013 and 2021" width="800">
@@ -87,7 +87,22 @@ The second conceptual framework represents the conceptual model for **impervious
   <img src="results/boxplot_HOLC_lst.png" alt="Comparison for LST between HOLC grades" width="800">
 </p>
 
-**1-2. Neighborhoods with higher HOLC grades tend to have a more significant proportion of urban forests (or tree canopies) and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.**
+**1-2. On average, neighborhoods with higher HOLC grades tend to have a higher proportion of tree canopy covers, whereas those with lower grades show a lower proportion. This pattern is captured in both 2013 and 2021. The box plots regarding the tree canopy proportion indicate that the average tree canopy percentage for HOLC grade A is the highest (year 2013: 54.4%, year 2021: 53.3%), while the percentage for HOLC grade D is the lowest (year 2013: 23.3%, year 2021: 20.6%). Kruskal-Wallis tests show that the median values of the average tree canopy percentage are different among the four HOLC grades in both 2013 and 2021 (2013: χ² = 37.766, df = 3, p < 0.001; 2021: χ² = 38.073, df = 3, p < 0.001).**
+
+<p align="left">
+  <img src="results/portland_holc_treecanopy.png" alt="Comparison for Tree Canopy Cover between 2013 and 2021" width="800">
+</p>
+
+<p align="left">
+  <img src="results/boxplot_HOLC_TC.png" alt="Comparison for TC between HOLC grades" width="800">
+</p>
+
+**1-3. and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.**
+
+
+**1-4.**
+
+
 * Neighborhoods with higher HOLC grades are less vulnerable to heat exposure, whereas those with lower grades are more susceptible. Additionally, neighborhoods with more urban forests and fewer impervious surfaces tend to have lower land surface temperatures.
 
 ### 2) Regression Results
