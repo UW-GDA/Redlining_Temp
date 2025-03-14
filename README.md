@@ -97,8 +97,15 @@ The second conceptual framework represents the conceptual model for **impervious
   <img src="results/boxplot_HOLC_TC.png" alt="Comparison for TC between HOLC grades" width="800">
 </p>
 
-**1-3. and a smaller proportion of impervious surfaces in each city, and this pattern has remained consistent over time.**
+**1-3. Neighborhoods with lower HOLC grades (C and D) tend to have higher percentages of impervious surfaces, while those with higher grades (A and B) typically show lower impervious surfaces. The common pattern is observed in both 2013 and 2021. The box plots concerning the proportion of impervious surfaces indicate that the average impervious surface percentage for HOLC grade A (year 2013: 26.5%, year 2021: 25.6%) is the lowest, whereas the percentage for grade D (year 2013: 69.7%, year 2021: 68.3%) is the highest. Kruskal-Wallis tests indicate that the median values of the average impervious surfaces percentage significantly differ among the four HOLC grades in both 2013 and 2021 (2013: χ² = 38.87, df = 3, p < 0.001; 2021: χ² = 38.33, df = 3, p < 0.001).***
 
+<p align="left">
+  <img src="results/portland_holc_impervsurface.png" alt="Comparison for Impervious Surfaces between 2013 and 2021" width="800">
+</p>
+
+<p align="left">
+  <img src="results/boxplot_HOLC_imperv.png" alt="Comparison for Impervious Surfaces between HOLC grades" width="800">
+</p>
 
 **1-4.**
 
