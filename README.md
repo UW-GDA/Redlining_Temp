@@ -25,7 +25,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 </p>
 
 ## Datasets & URL
-* **Landsat 8 OLI/TIRS Collection 2 atmospherically corrected surface reflectance**[^1]: Using the Google Earth engine, I applied the approach described below to extract the average land surface temperature for 2021 and 2013. Based on the data source, I calculated the land surface temperature of HOLC-graded neighborhoods for 2021 and 2013. 
+* **Landsat 8 OLI/TIRS Collection 2 atmospherically corrected surface reflectance**[^1]: Using the Google Earth engine, I applied the approach described below to extract the average land surface temperature for 2021 and 2013. Based on the data source, I calculated the land surface temperature of HOLC-graded neighborhoods for 2021 and 2013. The Landsat 8 satellite has a 16-day repeat cycle. By filtering Landsat 8 satellite observations for Portland using the approach below, average land surface temperatures for 2021 and 2013 were calculated. 
 * **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured using the NLCD datasets for 2021 and 2013. 
 * **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
 * **American Community Survey Data[^4]**: Total population and housing units were derived from the NHGIS website. However, they were not used for geospatial analysis. 
@@ -44,7 +44,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 
 **3. Descriptive Statistics**
   * Box plots were used to examine whether the median values of land surface temperature, tree canopy cover, and impervious surfaces differ across HOLC grades, alongside Kruskal–Wallis H test results.
-  * I created several box plots and Kruskal-Wallis tests using R (Uploaded to github).
+  * I created several box plots and performed Kruskal-Wallis tests using R (Uploaded to github).
 
 **4. Geospatial Analysis**
   * Raster Analysis - Reproject/Clip/Zonal Stats
@@ -135,13 +135,17 @@ The second conceptual framework represents the conceptual model for **impervious
 </p>
 
 ## Discussion
-* Neighborhoods with higher HOLC grades have less heat vulnerability, whereas those with lower grades are more susceptible to heat. Additionally, neighborhoods with higher proportion of tree canopy cover and less proportion of impervious surfaces tend to have lower land surface temperatures.
-* zz
-* z
+* Redlining policies have contributed to environmental disparities, particularly in terms of heat vulnerability and the unequal spatial distribution of tree canopy cover and impervious surfaces as lasting effects of these policies.
+* Lower-graded neighborhoods face disproportionate heat exposure due to reduced tree canopy cover and increased impervious surfaces.
+* These disparities are not just remnants of the past but continue to shape heat vulnerability today.
+* Addressing these issues requires targeted interventions to mitigate heat-related risks in historically disadvantaged areas.
 
 ## Conclusion & Future Direction
-* This study showed that
-* 
+* Neighborhoods with higher HOLC grades have lower heat vulnerability, whereas those with lower grades are more susceptible to heat.
+* The percentage of tree canopy cover in neighborhoods is negatively associated with land surface temperature. Additionally, the mediating effect of tree canopy proportion on land surface temperature is more substantial than the direct effect of HOLC grades.
+* Neighborhoods with higher HOLC grades are more likely to have a greater proportion of tree canopy cover, while those with lower grades tend to have a smaller proportion of impervious surfaces.
+* Not only is the proportion of impervious surfaces in a neighborhood positively associated with land surface temperature, but the mediating effect of impervious surfaces on land surface temperature is also greater than the direct effect of HOLC grades.
+* To enhance robustness, this study may need to incorporate a multi-level structure using both grid-level and neighborhood-level data as a future research direction. Since restricting the analysis to the neighborhood level results in a small sample size for path analysis, a multi-level path analysis approach should be considered.
 
 ## References
 * Aaronson, D., Hartley, D., & Mazumder, B. (2021). The Effects of the 1930s HOLC "Redlining" Maps. *American Economic Journal: Economic Policy*, 13(4), 355-392.
