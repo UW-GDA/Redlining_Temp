@@ -115,7 +115,9 @@ The second conceptual framework represents the conceptual model for **impervious
 
 ### 2) Regression Results
 **2-1. Tree Canopy Cover as a Mediator**
-* The mediating effect of urban forests on land surface temperatures is more substantial in cities with lower population density. In contrast, the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
+* This model shows that percentage of tree canopy cover in neighborhoods is negatively associated with land surface temperature, which means that neighborhoods with higher proportion of tree canopy cover are more likely to have higher land surface temperatures. 
+* The mediating effect of tree canopy proportion on land surface temperature is more substantial than the direct effect of HOLC grades. In this model, the indirect effect of tree canopy cover accounts for 81% of the total effect on land surface temperature.
+* Given that the Chi-Square statistic (3.283) is not statistically significant, and the fit indices — CFI (0.996), RMSEA (0.085), and SRMR (0.012)—indicate a good model fit, this model adequately represents the data.
 
 <p align="left">
   <img src="results/regression1_figure.png" alt="Regression figure for tree canopy" width="800">
@@ -123,10 +125,13 @@ The second conceptual framework represents the conceptual model for **impervious
 
 
 **2-2. Impervious Surfaces as a Mediator**
-*    
-
+* The model indicates that the proportion of impervious surfaces in a neighborhood is positively associated with land surface temperature, suggesting that neighborhoods with a higher proportion of impervious surfaces tend to have higher land surface temperatures.
+* The mediating effect of impervious surfaces on land surface temperature is greater than the direct effect of HOLC grades. In this model, the indirect effect of impervious surfaces accounts for 80% of the total effect on land surface temperature.
+* Since the Chi-Square statistic (0.303) is not statistically significant and the fit indices — CFI (1.000), RMSEA (0.000), and SRMR (0.004) — indicate a good model fit, the model provides an adequate representation of the data.
+  
 <p align="left">
-  <img src="results/regression2_figure.png" alt="Regression figure for impervious surfaces" width="800">
+  <img src="results/regression2_figure.png" alt="Regression figure for impervious surfaces
+      " width="800">
 </p>
 
 ## Discussion
@@ -134,9 +139,9 @@ The second conceptual framework represents the conceptual model for **impervious
 * zz
 * z
 
-## Conclusion
-* This study showed that 
-
+## Conclusion & Future Direction
+* This study showed that
+* 
 
 ## References
 * Aaronson, D., Hartley, D., & Mazumder, B. (2021). The Effects of the 1930s HOLC "Redlining" Maps. *American Economic Journal: Economic Policy*, 13(4), 355-392.
