@@ -28,7 +28,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
 * **Landsat 8 OLI/TIRS Collection 2 atmospherically corrected surface reflectance**[^1]: Using the Google Earth engine, I applied the approach described below to extract the average land surface temperature for 2021 and 2013. Based on the data source, I calculated the land surface temperature of HOLC-graded neighborhoods for 2021 and 2013. 
 * **NLCD[^2] (National LandCover Database)**: The proportion of tree canopy cover and impervious surfaces was measured using the NLCD datasets for 2021 and 2013. 
 * **Mapping Inequality[^3]**: It was used for HOLC-graded neighborhood boundaries.
-* **American Community Survey Data[^4]**: Total population, housing units, the proportion of several races were derived from the NHGIS website. However, they were not used for geospatial analysis. 
+* **American Community Survey Data[^4]**: Total population and housing units were derived from the NHGIS website. However, they were not used for geospatial analysis. 
 * **Microsoft Building Footprints Data[^5]**: This data source was used to calculate the building area and density around HOLC-graded neighborhoods for 2021. 
 
 ## Methodology/Approach
@@ -43,8 +43,8 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
   * However, due to data limitations, only the 2021 dataset was available for building footprints.
 
 **3. Descriptive Statistics**
-  * The descriptive statistics for the ACS datasets were calculated based on the area intersected with HOLC-graded neighborhoods.
   * Box plots were used to examine whether the median values of land surface temperature, tree canopy cover, and impervious surfaces differ across HOLC grades, alongside Kruskal–Wallis H test results.
+  * I created several box plots and Kruskal-Wallis tests using R (Uploaded to github).
 
 **4. Geospatial Analysis**
   * Raster Analysis - Reproject/Clip/Zonal Stats
@@ -52,7 +52,7 @@ Neighborhoods redlined in the 1930s and 1940s have experienced significantly hig
     
 **5. Statistical Analysis**
   * Before running regression models, four HOLC-grades are classified into three categories (High: HOLC grade A, Intermediate: HOLC grade B, and Low: HOLC grades C and D) as grades C and D have similar patterns.  
-  * Path Analysis (Mediation Effect Analysis)  
+  * Path Analysis (Mediation Effect Analysis) was conducted only based on the datasets for 2021.  
 
 ## Tool/packages
 * Loading data: rioxarray [^6]
@@ -114,10 +114,25 @@ The second conceptual framework represents the conceptual model for **impervious
 </p>
 
 ### 2) Regression Results
+**2-1. Tree Canopy Cover as a Mediator**
 * The mediating effect of urban forests on land surface temperatures is more substantial in cities with lower population density. In contrast, the mediating effect of impervious surfaces on land surface temperatures is weaker in cities with higher population density.
+
+<p align="left">
+  <img src="results/regression1_figure.png" alt="Regression figure for tree canopy" width="800">
+</p>
+
+
+**2-2. Impervious Surfaces as a Mediator**
+*    
+
+<p align="left">
+  <img src="results/regression2_figure.png" alt="Regression figure for impervious surfaces" width="800">
+</p>
 
 ## Discussion
 * Neighborhoods with higher HOLC grades have less heat vulnerability, whereas those with lower grades are more susceptible to heat. Additionally, neighborhoods with higher proportion of tree canopy cover and less proportion of impervious surfaces tend to have lower land surface temperatures.
+* zz
+* z
 
 ## Conclusion
 * This study showed that 
