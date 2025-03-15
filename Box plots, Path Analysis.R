@@ -330,7 +330,7 @@ semPaths(run_2021_v2, "model", "est", edge.color="Black", layout="tree2", label.
          edge.label.position = 0.6)
 
 mod_lavann_2021_v3 <- 'temp2021_mean ~ A*imperv2021_mean + E*grade_int + F*grade_low + pop_density_2021
-                       imperv2021_mean ~ G*grade_int + H*grade_low + building_density_2021
+                       imperv2021_mean ~ G*grade_int + H*grade_low + building_density_2021  # Model for Impervious Surfaces
                        
                        # Indirect effects
                        indirect_imper := G*A + H*A 
